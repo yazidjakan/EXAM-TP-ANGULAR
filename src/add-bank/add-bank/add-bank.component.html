@@ -1,0 +1,52 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <h1>Ajouter une agence</h1>
+                <form #form="ngForm" (ngSubmit)="addAgencies()">
+
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="id" class="form-label">Id</label>
+                                    <input type="text" id="id" class="form-control" name="id" [(ngModel)]="newAgency.id"
+                                        readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nom</label>
+                                    <input type="text" id="name" class="form-control" name="name"
+                                        [(ngModel)]="newAgency.name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Adresse</label>
+                                    <input type="text" id="address" class="form-control" name="address"
+                                        [(ngModel)]="newAgency.address">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <input type="text" id="phone" class="form-control" name="phone"
+                                        [(ngModel)]="newAgency.phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="image" class="form-label">image</label>
+                                    <input type="file" id="image" class="form-control" name="image"
+                                        [(ngModel)]="newAgency.image">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Ajouter</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

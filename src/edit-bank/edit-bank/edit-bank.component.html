@@ -1,0 +1,45 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <h1>Modifier une agence</h1>
+                <form #form="ngForm" (ngSubmit)="updateAgencies()">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">ID:</label>
+                        <input type="text" class="form-control" id="id" name="id" [(ngModel)]="agencyDetails.id"
+                            readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom:</label>
+                        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="agencyDetails.name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Adresse:</label>
+                        <input type="text" class="form-control" id="address" name="address"
+                            [(ngModel)]="agencyDetails.address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Téléphone:</label>
+                        <input type="text" id="phone" class="form-control" name="phone"
+                            [(ngModel)]="agencyDetails.phone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image:</label> <br>
+                        <img width="70" height="70" name="image" [src]="agencyDetails.image" alt="">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    <button type="button" class="btn btn-danger"
+                        (click)="deleteAgencies(agencyDetails.id)">Supprimer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

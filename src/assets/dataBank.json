@@ -1,0 +1,44 @@
+{
+  "agencies": [
+    {
+      "id": 1,
+      "name": "Agence test",
+      "address": "Adresse de l'agence test",
+      "phone": "123456710",
+      "image": "assets/images/banquepopulaire.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Agence test2",
+      "address": "Adresse de l'agence test 2",
+      "phone": "987654312",
+      "image": "assets/images/cih.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Agence test 3",
+      "address": "Adresse de l'agence test 3",
+      "phone": "555555556",
+      "image": "assets/images/creditagricole.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Agence 4",
+      "address": "adresse agence 4",
+      "phone": "0661372950",
+      "image": "assets/images/atijjary.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "yazid",
+      "password": "yazid1234"
+    },
+    {
+      "id": 2,
+      "username": "test",
+      "password": "test1234"
+    }
+  ]
+}
